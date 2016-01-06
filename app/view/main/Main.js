@@ -68,7 +68,40 @@ Ext.define('extjsui.view.main.Main', {
 								width	:'50%',
 								height	: '100%',
 								border		: false,
-								bodyStyle	:{"background-color":"#ce1c23"}
+								bodyStyle	:{"background-color":"#ce1c23"},
+								layout: {
+									type: 'vbox',
+									pack: 'start',
+									align: 'stretch'
+								},
+								items		:[{
+									//Upper sequrity pic
+									flex		: 1,
+//									bodyStyle	:{"background-color":"#ce1c23"},
+									bodyStyle	:{"background-color":"#c12d2d"},
+									margin		: '0 0 0 0',
+									height		: '80%',
+									bodyStyle	: "background:url(./../resources/security.png) no-repeat scroll center center transparent !important"
+									
+								},{
+									//lower username field
+									margin		: '0 0 20 80',
+									bodyStyle	:{"background-color":"#ce1c23"},
+									items		:[{
+										xtype	: 'textfield',
+										name	: 'username'
+										
+									},{
+										xtype	: 'textfield',
+										name	: 'pass',
+										inputType: 'password',
+										layout		:{
+											type	: 'vbox',
+											pack	: 'start',
+											align	: 'stretch'
+										},
+									}]
+								}]
 						},{
 							// number box right panel
 								width		: '50%',
