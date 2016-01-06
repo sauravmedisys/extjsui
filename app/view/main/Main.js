@@ -105,8 +105,69 @@ Ext.define('extjsui.view.main.Main', {
 						},{
 							// number box right panel
 								width		: '50%',
-								bodyStyle	:{"background-color":"#ce1c23"}
-								
+								bodyStyle	:{"background-color":"#ce1c23"},
+								layout		:{
+									type	: 'vbox',
+									pack	: 'start',
+									align	: 'stretch'
+								},
+								items		:[{
+									//Upper Number pad
+									flex		: 1,
+//									bodyStyle	:{"background-color":"#ce1c23"},
+									bodyStyle	:{"background-color":"#c12d2d"},
+									margin		: '0 0 0 0',
+									height		: '80%',
+									bodyPadding	: '15 20',
+									bodyStyle	:{"background-color":"#ce1c23"},
+									layout		: {
+										type		: 'table',
+										columns		: 4,
+										tableAttrs	: {
+											style	: {
+												width: '100%'
+											}
+										}
+									},
+									items		:[{
+										xtype	: 'button',
+										width	: '100%',
+										text	: '1',
+										width	: '100%',
+										scale	: 'large'
+										
+									},{
+										xtype	: 'button',
+										text	: '2',
+										width	: '100%',
+										scale	: 'large'
+									}]
+									
+								},{
+									//lower image field
+									margin		: '0 0 20 20',
+									bodyStyle	:{"background-color":"#ce1c23"},
+									layout		: {
+										type	: 'hbox',
+										pack	: 'start',
+										align	: 'stretch'
+									},
+									items		:[{
+										xtype	: 'button',
+										text	: 'logout',
+										width	: '40%',
+										scale	: 'large',
+										bodyStyle	: "background:url(resources/logout.png) no-repeat scroll center center transparent !important"
+									
+									},{
+										xtype	: 'button',
+										text	: 'login',
+										width	: '40%',
+										scale	: 'large',
+										bodyStyle	: "background:url(resources/login.png) no-repeat scroll center center transparent !important"
+									
+									}]
+								}]
 						}]
 				}]
 		}]
