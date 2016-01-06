@@ -141,7 +141,52 @@ Ext.define('extjsui.view.main.Main', {
 										text	: '2',
 										width	: '100%',
 										scale	: 'large'
-									}]
+									},,{
+									xtype	: 'button',
+									text	: '3',
+									width	: '100%',
+									scale	: 'large'
+								},{
+									xtype	: 'button',
+									text	: '4',
+									width	: '100%',
+									scale	: 'large'
+								},{
+									xtype	: 'button',
+									text	: '5',
+									width	: '100%',
+									scale	: 'large'
+								},{
+									xtype	: 'button',
+									text	: '6',
+									width	: '100%',
+									scale	: 'large'
+								},{
+									xtype	: 'button',
+									text	: '7',
+									width	: '100%',
+									scale	: 'large'
+								},{
+									xtype	: 'button',
+									text	: '8',
+									width	: '100%',
+									scale	: 'large'
+								},{
+									xtype	: 'button',
+									text	: '9',
+									width	: '100%',
+									scale	: 'large'
+								},{
+									xtype	: 'button',
+									text	: '0',
+									width	: '100%',
+									scale	: 'large'
+								},{
+									xtype	: 'button',
+									text	: 'Enter',
+									width	: '200%',
+									scale	: 'large'
+								}]
 									
 								},{
 									//lower image field
