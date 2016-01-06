@@ -8,21 +8,12 @@
 Ext.define('extjsui.view.main.Main', {
     extend: 'Ext.container.Container',
     requires: [
-        'extjsui.view.main.MainController',
-        'extjsui.view.main.MainModel',
-		'Ext.layout.container.Center',
+        'Ext.layout.container.Center',
 		'Ext.layout.container.HBox',
 		'Ext.layout.container.Table'
     ],
-    xtype: 'app-main',
-    controller: 'main',
-    viewModel: {
-        type: 'center'
-    },
-
-    layout: {
-        type: 'border'
-    },
+    xtype		: 'layout-center',
+     layout		: 'center',
 	
     items: [{
 		// main container
@@ -32,7 +23,7 @@ Ext.define('extjsui.view.main.Main', {
         width		: '100%',
         height		: '100%',
         bodyPadding	: '20 0',
-		bodyStyle	: "background:url(./../resources/logo.png) no-repeat !important",
+		bodyStyle	: 'background:url(./../resources/logo.png) no-repeat !important',
 		items		:[{
 			//middle panel
                 width		: '91%',
