@@ -23,12 +23,13 @@ Ext.define('extjsui.view.main.Main', {
         width		: '100%',
         height		: '100%',
         bodyPadding	: '20 0',
-		bodyStyle	: 'background:url(./../resources/logo.png) no-repeat !important',
+		bodyStyle	: 'background:url(resources/logo.png) no-repeat !important',
 		items		:[{
 			//middle panel
+				
                 width		: '91%',
                 height		: '50%',
-				margin		: '10.5% 0 0 0',
+				margin		: '10.5 0 0 0',
                 frame		: false,
                 bodyPadding	: '10 20',
 				position	: 'fixed',
@@ -42,11 +43,41 @@ Ext.define('extjsui.view.main.Main', {
 				items		:[{
 					//inner left panel in middle panel
 						flex	: 1,
-						html		: '<center><h1> <font color="#c12d2d">HOSPITAL</font> <font color="#7a7a7a">INFORMATION SYSTEM<center><h1></center>',
 						height	: '100%',
 						border	: false,
-						bodyStyle	: "background:url(resources/hosplogo.png) no-repeat scroll center center transparent !important"
-					
+						layout		: {
+							type	: 'vbox',
+							pack	: 'start',
+							align	: 'stretch'
+						},
+						bodyStyle	: "background:transparent",
+						items		:[{
+							flex	: 1,
+							html		: '<center><h1> <font color="#c12d2d">HOSPITAL</font> <font color="#7a7a7a">INFORMATION SYSTEM<center><h1></center>',
+							height	: '50%',
+							layout		: {
+							type	: 'hbox',
+							pack	: 'start',
+							align	: 'stretch'
+						},
+						bodyStyle	: "background:transparent",
+						items		:[{
+							flex	: 1,
+							height	: '50%',
+							bodyStyle	: "background:url(resources/tips.png) no-repeat scroll center center transparent !important",
+							
+						},{
+							flex	: 2,
+							html	:'hello',
+							margin	: '60 0 0 50',
+							height	: '50%',
+							bodyStyle	: "background:transparent"
+						}]
+						},{
+							flex	: 2,
+							height	: '50%',
+							bodyStyle	: "background:url(resources/hosplogo.png) no-repeat scroll transparent !important"
+						}]
 				},{
 					// inner right panel in middle panel
 						html		: 'right panel',
@@ -65,7 +96,7 @@ Ext.define('extjsui.view.main.Main', {
 						items		:[{
 							//Sign in box left panel
 								flex	: 1,
-								width	:'50%',
+								width	:'30%',
 								height	: '100%',
 								border		: false,
 								bodyStyle	:{"background-color":"#ce1c23"},
@@ -81,11 +112,11 @@ Ext.define('extjsui.view.main.Main', {
 									bodyStyle	:{"background-color":"#c12d2d"},
 									margin		: '0 0 0 0',
 									height		: '80%',
-									bodyStyle	: "background:url(./../resources/security.png) no-repeat scroll center center transparent !important"
+									bodyStyle	: "background:url(resources/security.png) no-repeat scroll center center transparent !important"
 									
 								},{
 									//lower username field
-									margin		: '0 0 20 80',
+									margin		: '0 0 20 40',
 									bodyStyle	:{"background-color":"#ce1c23"},
 									items		:[{
 										xtype	: 'textfield',
@@ -104,7 +135,7 @@ Ext.define('extjsui.view.main.Main', {
 								}]
 						},{
 							// number box right panel
-								width		: '50%',
+								width		: '60%',
 								bodyStyle	:{"background-color":"#ce1c23"},
 								layout		:{
 									type	: 'vbox',
@@ -130,20 +161,27 @@ Ext.define('extjsui.view.main.Main', {
 										}
 									},
 									items		:[{
-										xtype	: 'button',
-										width	: '100%',
-										text	: '1',
-										width	: '100%',
-										scale	: 'large'
-										
-									},{
-										xtype	: 'button',
-										text	: '2',
-										width	: '100%',
-										scale	: 'large'
-									},,{
 									xtype	: 'button',
-									text	: '3',
+									width	: '100%',
+									text	: '7',
+									width	: '100%',
+									scale	: 'large',
+									bodyStyle	:'background-color:#dedede'
+									
+									
+								},{
+									xtype	: 'button',
+									text	: '8',
+									width	: '100%',
+									scale	: 'large'
+								},{
+									xtype	: 'button',
+									text	: '9',
+									width	: '100%',
+									scale	: 'large'
+								},{
+									xtype	: 'button',
+									text	: 'AC',
 									width	: '100%',
 									scale	: 'large'
 								},{
@@ -163,28 +201,28 @@ Ext.define('extjsui.view.main.Main', {
 									scale	: 'large'
 								},{
 									xtype	: 'button',
-									text	: '7',
+									text	: 'bs',
 									width	: '100%',
 									scale	: 'large'
 								},{
 									xtype	: 'button',
-									text	: '8',
+									text	: '1',
 									width	: '100%',
 									scale	: 'large'
 								},{
 									xtype	: 'button',
-									text	: '9',
+									text	: '2',
 									width	: '100%',
 									scale	: 'large'
 								},{
 									xtype	: 'button',
-									text	: '0',
+									text	: '3',
 									width	: '100%',
 									scale	: 'large'
 								},{
 									xtype	: 'button',
 									text	: 'Enter',
-									width	: '200%',
+									width	: '100%',
 									scale	: 'large'
 								}]
 									
