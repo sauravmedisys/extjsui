@@ -30,7 +30,6 @@ Ext.define('extjsui.view.main.Main', {
                 width		: '91%',
                 height		: '60%',
 				margin		: '10.5 0 0 0',
-                frame		: false,
                 bodyPadding	: '10 20',
 				position	: 'fixed',
 				border		: '1px solid rgb(217, 220, 220)',
@@ -70,8 +69,8 @@ Ext.define('extjsui.view.main.Main', {
 							flex	: 2,
 							html	:'User Tips<br>* To Change Password Press "F9"<br>* Remember to logout before leaving your workstation<br>* if you don\'t Enter your ID & Password in less than 2 Min! your session will be logged out.',
 							margin	: '40 0 0 0',
-							height	: '70%',
-							bodyStyle	: "background:transparent"
+							height	: '50%',
+							bodyStyle	: 'background: center transparent !important'
 						}]
 						},{
 							flex	: 2,
@@ -83,8 +82,14 @@ Ext.define('extjsui.view.main.Main', {
 							align	: 'stretch'
 						},
 						items		:[{
-							bodyStyle	: "background:url(resources/hosplogo.png) no-repeat scroll transparent !important"
+							flex		: 1,
+							height		: '50%',
+							bodyStyle	: "background:url(resources/hosplogo.png) no-repeat center center scroll transparent !important"
 						},{
+							flex		: 2,
+							html		: "Product License<br>This Product is Licensed to:<br>Ministry of Health<br>License Code: 1127-58",
+							height		: '50%',
+							bodyStyle	: 'background: center center scroll transparent !important'
 							
 						}]
 						}]
