@@ -28,7 +28,7 @@ Ext.define('extjsui.view.main.Main', {
 			//middle panel
 				
                 width		: '91%',
-                height		: '50%',
+                height		: '60%',
 				margin		: '10.5 0 0 0',
                 frame		: false,
                 bodyPadding	: '10 20',
@@ -64,19 +64,29 @@ Ext.define('extjsui.view.main.Main', {
 						items		:[{
 							flex	: 1,
 							height	: '50%',
-							bodyStyle	: "background:url(resources/tips.png) no-repeat scroll center center transparent !important",
+							bodyStyle	: "background:url(resources/tips.png) no-repeat scroll center center transparent !important"
 							
 						},{
 							flex	: 2,
-							html	:'hello',
-							margin	: '60 0 0 50',
-							height	: '50%',
+							html	:'User Tips<br>* To Change Password Press "F9"<br>* Remember to logout before leaving your workstation<br>* if you don\'t Enter your ID & Password in less than 2 Min! your session will be logged out.',
+							margin	: '40 0 0 0',
+							height	: '70%',
 							bodyStyle	: "background:transparent"
 						}]
 						},{
 							flex	: 2,
 							height	: '50%',
+							
+							layout		: {
+							type	: 'hbox',
+							pack	: 'start',
+							align	: 'stretch'
+						},
+						items		:[{
 							bodyStyle	: "background:url(resources/hosplogo.png) no-repeat scroll transparent !important"
+						},{
+							
+						}]
 						}]
 				},{
 					// inner right panel in middle panel
